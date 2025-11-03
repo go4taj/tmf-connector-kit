@@ -1,6 +1,7 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "private": true,
+  "name": "tmf-connector-kit",
+  "description": "Unified TM Forum API Client for Node.js",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,6 +11,16 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "author": "Taj Ahmed",
+  "license": "MIT",
+  "repository": {
+  "type": "git",
+    "url": "https://github.com/go4taj/tmf-connector-kit.git"
+  },
+  "main": "./dist/sdk/index.js",
+  "types": "./dist/sdk/index.d.ts",
+  "files": ["dist/sdk"],
+  "keywords": ["tmf", "tm-forum", "api", "sdk"]
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
