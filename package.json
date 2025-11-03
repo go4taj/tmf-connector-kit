@@ -20,7 +20,7 @@
   "main": "./dist/sdk/index.js",
   "types": "./dist/sdk/index.d.ts",
   "files": ["dist/sdk"],
-  "keywords": ["tmf", "tm-forum", "api", "sdk"]
+  "keywords": ["tmf", "tm-forum", "api", "sdk"],
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
