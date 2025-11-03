@@ -19,20 +19,20 @@ export const Installation = () => {
           <Card className="p-8 bg-gradient-to-br from-card to-muted/20 border-border">
             <div className="flex items-center gap-3 mb-4">
               <Download className="h-6 w-6 text-primary" />
-              <h3 className="text-xl font-semibold">npm</h3>
+              <h3 className="text-xl font-semibold">Clone from GitHub</h3>
             </div>
             <div className="bg-code-bg rounded-lg p-4 border border-code-border">
-              <code className="text-foreground font-mono">npm install tmf-sdk</code>
+              <code className="text-foreground font-mono text-xs">git clone https://github.com/go4taj/tmf-connector-kit.git</code>
             </div>
           </Card>
 
           <Card className="p-8 bg-gradient-to-br from-card to-muted/20 border-border">
             <div className="flex items-center gap-3 mb-4">
               <Download className="h-6 w-6 text-accent" />
-              <h3 className="text-xl font-semibold">yarn</h3>
+              <h3 className="text-xl font-semibold">Install Dependencies</h3>
             </div>
             <div className="bg-code-bg rounded-lg p-4 border border-code-border">
-              <code className="text-foreground font-mono">yarn add tmf-sdk</code>
+              <code className="text-foreground font-mono">npm install</code>
             </div>
           </Card>
         </div>
