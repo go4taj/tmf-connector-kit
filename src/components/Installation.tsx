@@ -15,24 +15,47 @@ export const Installation = () => {
           </p>
         </div>
 
+        <Card className="p-8 mb-8 bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30">
+          <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+            <Download className="h-6 w-6 text-primary" />
+            Install from Private Registry
+          </h3>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm text-muted-foreground mb-2">Configure npm to use the comviva-cots registry:</p>
+              <div className="bg-code-bg rounded-lg p-4 border border-code-border">
+                <code className="text-foreground font-mono text-sm">npm config set registry https://your-jfrog-url/artifactory/api/npm/comviva-cots/</code>
+              </div>
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground mb-2">Then install the package:</p>
+              <div className="bg-code-bg rounded-lg p-4 border border-code-border">
+                <code className="text-foreground font-mono">npm install tmf-connector-kit</code>
+              </div>
+            </div>
+          </div>
+        </Card>
+
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           <Card className="p-8 bg-gradient-to-br from-card to-muted/20 border-border">
             <div className="flex items-center gap-3 mb-4">
               <Download className="h-6 w-6 text-primary" />
-              <h3 className="text-xl font-semibold">npm</h3>
+              <h3 className="text-xl font-semibold">Alternative: .npmrc</h3>
             </div>
+            <p className="text-sm text-muted-foreground mb-3">Add to your project's .npmrc file:</p>
             <div className="bg-code-bg rounded-lg p-4 border border-code-border">
-              <code className="text-foreground font-mono">npm install tmf-connector-kit</code>
+              <code className="text-foreground font-mono text-sm">registry=https://your-jfrog-url/artifactory/api/npm/comviva-cots/</code>
             </div>
           </Card>
 
           <Card className="p-8 bg-gradient-to-br from-card to-muted/20 border-border">
             <div className="flex items-center gap-3 mb-4">
               <Download className="h-6 w-6 text-accent" />
-              <h3 className="text-xl font-semibold">yarn</h3>
+              <h3 className="text-xl font-semibold">Using yarn</h3>
             </div>
+            <p className="text-sm text-muted-foreground mb-3">Configure and install with yarn:</p>
             <div className="bg-code-bg rounded-lg p-4 border border-code-border">
-              <code className="text-foreground font-mono">yarn add tmf-connector-kit</code>
+              <code className="text-foreground font-mono text-sm">yarn config set registry https://your-jfrog-url/artifactory/api/npm/comviva-cots/ && yarn add tmf-connector-kit</code>
             </div>
           </Card>
         </div>
@@ -68,7 +91,7 @@ export const Installation = () => {
               <h4 className="font-semibold mb-2 text-accent">Features</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>• TypeScript type definitions</li>
-                <li>• 22+ TMF API specifications</li>
+                <li>• 26+ TMF API specifications</li>
                 <li>• Zero dependencies (fetch-based)</li>
                 <li>• Full ESM & CommonJS support</li>
               </ul>

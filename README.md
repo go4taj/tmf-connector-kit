@@ -36,8 +36,32 @@ A unified TypeScript SDK for TM Forum APIs, providing a consistent and easy-to-u
 | TMF683 | Party Role Management | Party |
 | TMF621 | Trouble Ticket Management | Assurance |
 | TMF628 | Performance Management | Assurance |
+| TMF644 | Payment Methods Management | Payment |
+| TMF670 | Payment Hub | Payment |
+| TMF676 | Payment Management | Payment |
+| TMF681 | Communication Management | Communication |
 
 ## Installation
+
+### From Private JFrog Registry (comviva-cots)
+
+Configure npm to use the private registry:
+
+```bash
+# Set the registry URL
+npm config set registry https://your-jfrog-url/artifactory/api/npm/comviva-cots/
+
+# Install the package
+npm install tmf-connector-kit
+```
+
+Or add to your project's `.npmrc` file:
+
+```
+registry=https://your-jfrog-url/artifactory/api/npm/comviva-cots/
+```
+
+Then install:
 
 ```bash
 npm install tmf-connector-kit

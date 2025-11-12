@@ -34,6 +34,10 @@ export const TMF_APIS: TMFAPIMetadata[] = [
   { code: 'TMF683', name: 'Party Role Management', version: '4.0', description: 'Manage party roles', category: 'Party' },
   { code: 'TMF621', name: 'Trouble Ticket Management', version: '4.0', description: 'Manage trouble tickets', category: 'Assurance' },
   { code: 'TMF628', name: 'Performance Management', version: '4.0', description: 'Manage performance metrics', category: 'Assurance' },
+  { code: 'TMF644', name: 'Payment Methods Management', version: '4.0', description: 'Manage payment methods', category: 'Payment' },
+  { code: 'TMF670', name: 'Payment Hub', version: '4.0', description: 'Manage payment hub operations', category: 'Payment' },
+  { code: 'TMF676', name: 'Payment Management', version: '4.0', description: 'Manage payments and transactions', category: 'Payment' },
+  { code: 'TMF681', name: 'Communication Management', version: '4.0', description: 'Manage communications', category: 'Communication' },
 ];
 
 export const TMF_API_REGISTRY = new Map(
