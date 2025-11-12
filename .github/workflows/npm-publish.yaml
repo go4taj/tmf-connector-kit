@@ -28,12 +28,9 @@ jobs:
       - name: Build
         run: npm run build:sdk
 
-      # critical: configure npm auth before publish
-      - name: Configure npm authentication
+      - name: Publish to npm
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          npm publish --access public
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Publish to npm
-        run: npm publish --access public
